@@ -25,12 +25,12 @@ int main()
 
     while (count--)
     {
-        f1();
+        fun1();
         /* code */
     }
     
 }
-void f1(){
+void fun1(){
     static int thinx =5;
     thinx++;
 
