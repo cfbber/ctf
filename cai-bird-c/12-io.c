@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+void read();
 int main()
 {
 
@@ -9,7 +9,7 @@ int main()
     scanf("%f", &f);
     printf("%f \n", f);
 
- 
+
 
     puts("");
 
@@ -22,7 +22,7 @@ int main()
     printf("%d \n", a);
     // return 0;
 
-       char c;
+    char c;
     puts("input a char");
     c = getchar();
     putchar(c);
@@ -30,6 +30,34 @@ int main()
 
     puts("input a str, int");
 
-    scanf("%s %d",&str,&a);
-    printf("%s %d",str,a);
+    scanf("%s %d", &str, &a);
+    printf("%s %d", str, a);
+
+    read();
+}
+
+void read() {
+
+    puts("-----------read-----------");
+
+    FILE* fp = NULL;
+    char buff[255];
+
+    fp = fopen("C:\\workspace\\ctf\\cai-bird-c\\0-t.c", "r");
+    fscanf(fp, "%s", buff); // 遇空格则停
+    printf("1: %s \n", buff);
+
+    fgets(buff, 255, fp); // 遇换行停
+    printf("2: %s \n", buff);
+
+    fgets(buff, 255, fp);
+    printf("3: %s \n", buff);
+
+    fgets(buff, 255, fp);
+    printf("4: %s \n", buff);
+
+    fgets(buff, 255, fp);
+    printf("5: %s \n", buff);
+
+    fclose(fp);
 }

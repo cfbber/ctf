@@ -11,3 +11,21 @@
 2. 用户PATH添加:` C:\app\w64devkit\bin`
 3. gcc -v显示正常，即成功
 4. 重启vscode
+
+
+### git proxy
+解决访问不了github问题
+
+* 设置 HTTP 使用 SOCKS5 代理
+git config --global http.proxy socks5://127.0.0.1:51837
+
+* 设置 HTTPS 使用 SOCKS5 代理
+git config --global https.proxy socks5://127.0.0.1:51837
+
+* 查看当前代理设置
+git config --global --get http.proxy
+git config --global --get https.proxy
+
+* 取消代理设置
+git config --global --unset http.proxy
+git config --global --unset https.proxy
