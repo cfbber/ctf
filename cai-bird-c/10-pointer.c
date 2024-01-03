@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int max(int x, int y) {
+int maxx(int x, int y) {
     return x > y ? x : y;
 }
 int getRandom() {
@@ -22,7 +22,7 @@ void setArray(int array[], size_t arraySize, int (*fun)(void)) {
 
 int main()
 {
-    int (*p)(int, int) = &max;//
+    int (*p)(int, int) = &maxx;//
     int a, b, c, d;
 
     printf("input three nums");

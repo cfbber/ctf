@@ -5,7 +5,7 @@ enum DAY {
 };// åç»­å€¼ï¼Œinc
 
 enum COLOR { red = 1, green, blue };
-
+void fav() ;
 int main()
 {
     enum DAY day;
@@ -22,7 +22,7 @@ int main()
 }
 
 void fav() {
-    printf("ÇëÊäÈëÄãÏ²»¶µÄÑÕÉ«: (1. red, 2. green, 3. blue): ");
+    printf("è¯·é€‰æ‹©å–œæ¬¢çš„é¢œè‰²: (1. red, 2. green, 3. blue): ");
 
     enum COLOR color;
 

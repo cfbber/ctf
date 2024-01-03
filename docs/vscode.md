@@ -12,6 +12,9 @@
 3. gcc -v显示正常，即成功
 4. 重启vscode
 
+* c代码中文代码
+1. 修改c代码格式gb2312
+2. 修改cmd默认chcp值，修改code runner命令，手动修改chcp 65001
 
 ### git proxy
 解决访问不了github问题
