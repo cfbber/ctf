@@ -61,3 +61,14 @@ void read() {
 
     fclose(fp);
 }
+
+void f3(){
+    // int fputc(int character, FILE *stream);
+    // 将字符写入指定的文件
+    //int fprintf(FILE *stream, const char *format, ...);
+    // 用于将按指定格式写入文件
+
+    // int fseek(FILE *stream, long int offset, int origin);
+    // 设置文件位置指示器，在文件中定位到指定位置
+
+}
