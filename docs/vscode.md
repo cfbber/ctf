@@ -32,3 +32,8 @@ git config --global --get https.proxy
 * 取消代理设置
 git config --global --unset http.proxy
 git config --global --unset https.proxy
+
+* 解决git clone失败，先浅拷贝，再全下
+  fatal : The remote end hung up unexpectedly
+ git clone --depth=1 http://git地址
+cd xxx ; git fetch --unshallow
