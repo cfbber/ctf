@@ -37,3 +37,10 @@ git config --global --unset https.proxy
   fatal : The remote end hung up unexpectedly
  git clone --depth=1 http://git地址
 cd xxx ; git fetch --unshallow
+
+* git关联多个仓库
+git remote add gitee https://gitee.com/cfbber/ctf.git
+git push -u gitee master
+git remote rm origin
+
+
